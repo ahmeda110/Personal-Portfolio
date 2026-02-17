@@ -3,12 +3,16 @@ import Card from "../components/About/Card";
 import { Globe } from "../components/About/globe";
 import CopyEmailButton from "../components/About/CopyEmailButton";
 import { Frameworks } from "../components/About/FrameWorks";
+import TitleHeader from "../components/TitleHeader";
 
 const About = () => {
   const grid2Container = useRef();
   return (
     <section className="c-space section-spacing" id="about">
-      <h2 className="text-heading">About Me</h2>
+      <TitleHeader 
+          title="About Me"
+          sub="🧍‍♂️ Who Am I?"
+        />
       <div className="grid grid-cols-1 gap-4 md:grid-cols-6 md:auto-rows-[18rem] mt-12">
         {/* Grid 1 */}
         <div className="flex items-end grid-default-color grid-1">
