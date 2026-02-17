@@ -89,3 +89,21 @@ export const expLogos = [
     imgPath: "/images/logo3.png",
   },
 ];
+
+export const mySocials = [
+   {
+    name: "Github",
+    href: "https://github.com/ahmeda110",
+    icon: "/images/socials/github.svg",
+  },
+  {
+    name: "Linkedin",
+    href: "https://www.linkedin.com/in/ahmed-abbas-a194951b4/",
+    icon: "/images/socials/linkedIn.svg",
+  },
+  {
+    name: "Instagram",
+    href: "https://www.instagram.com/a.abssss",
+    icon: "/images/socials/instagram.svg",
+  },
+];

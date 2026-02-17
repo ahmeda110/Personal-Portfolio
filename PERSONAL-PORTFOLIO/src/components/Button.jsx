@@ -1,31 +1,28 @@
-/**
- * A reusable CTA button component.
- * When clicked, it scrolls smoothly to the section with ID "counter",
- * with a small offset from the top for better visual placement.
- */
-
-const Button = ({ text, className, id }) => {
+const Button = ({ text, className, id, onClick }) => {
   return (
     <a
       onClick={(e) => {
-        e.preventDefault(); // Stop the link from jumping instantly
+        e.preventDefault();
 
-        const target = document.getElementById("counter"); // Find the section with ID "counter"
+        // If a custom onClick is provided, run that instead
+        if (onClick) {
+          onClick();
+          return;
+        }
 
-        // Only scroll if we found the section and an ID is passed in
-        // taht prevents the contact button from scrolling to the top
+        const target = document.getElementById("counter");
+
         if (target && id) {
-          const offset = window.innerHeight * 0.15; // Leave a bit of space at the top
-
-          // Calculate how far down the page we need to scroll
+          const offset = window.innerHeight * 0.15;
           const top =
-            target.getBoundingClientRect().top + window.pageYOffset - offset;
+            target.getBoundingClientRect().top +
+            window.pageYOffset -
+            offset;
 
-          // Scroll smoothly to that position
           window.scrollTo({ top, behavior: "smooth" });
         }
       }}
-      className={`${className ?? ""} cta-wrapper`} // Add base + extra class names
+      className={`${className ?? ""} cta-wrapper`}
     >
       <div className="cta-button group">
         <div className="bg-circle" />
@@ -37,5 +34,6 @@ const Button = ({ text, className, id }) => {
     </a>
   );
 };
+
 
 export default Button;

@@ -34,8 +34,19 @@ function Hero() {
                     <p className="text-gray-400 md:text-xl relative z-10 pointer-events-none">
                         Passionate About Creating Impactful Change Through Software :)
                     </p>
-                    <Button 
-                        className="md:w-80 md:h-16 w-60 h-12" id="button" text="See my Work"/>
+                    <Button
+                        className="md:w-80 md:h-16 w-60 h-12"
+                        text="View My Resume"
+                        onClick={() => {
+                            const link = document.createElement("a");
+                            link.href = "/AhmedA_Resume.pdf";
+                            link.download = "Ahmed_Abbas_Resume.pdf";
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        }}
+                    />
+
                 </div>
             </header>
 

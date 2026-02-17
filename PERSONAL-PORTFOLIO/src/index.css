@@ -82,22 +82,6 @@ body {
   @apply text-white text-sm md:text-base text-pretty font-extralight;
 }
 
-/* Navigation */
-.nav-ul {
-  @apply flex flex-col items-center gap-4 sm:flex-row md:gap-6 relative z-20;
-}
-
-.nav-li {
-  @apply text-neutral-400 hover:text-white max-sm:w-full max-sm:rounded-md py-2 max-sm:px-5;
-}
-
-.nav-link {
-  @apply text-lg md:text-base hover:text-white transition-colors;
-}
-/* Button Components */
-.btn {
-  @apply relative px-1 py-4 text-sm text-center rounded-full font-extralight bg-primary w-[12rem] cursor-pointer overflow-hidden;
-}
 
 /* About Section */
 .grid-1 {
@@ -133,7 +117,7 @@ body {
 }
 
 .field-input {
-  @apply w-full min-h-10 rounded-md px-3 py-2 text-sm bg-white/10 transition duration-200 placeholder-neutral-500 border border-white/10 mt-2;
+  @apply w-full min-h-10 rounded-md px-3 py-2 text-sm bg-white/5 transition duration-200 placeholder-neutral-700 border border-white/10 mt-2;
 }
 
 .field-input-focus {
@@ -394,7 +378,7 @@ section {
   }
 
   .testi-image img {
-     @apply md:w-40
+     @apply md:w-30 p-0
   }
 
   .exp-card-wrapper {
