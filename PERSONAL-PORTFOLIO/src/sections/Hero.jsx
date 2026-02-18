@@ -36,7 +36,7 @@ function Hero() {
                     </p>
                     <Button
                         className="md:w-80 md:h-16 w-60 h-12"
-                        text="Resume/CV"
+                        text="View My Resume"
                         onClick={() => {
                             const link = document.createElement("a");
                             link.href = "/AhmedA_Resume.pdf";
@@ -51,7 +51,7 @@ function Hero() {
             </header>
 
             {/* right side of hero */}
-            <figure className="">
+            <figure>
                 <div className="hero-3d-layout">
                     <HeroExperience />
                 </div>

@@ -24,7 +24,7 @@ const About = () => {
             <p className="headtext">Hi, I'm Ahmed Abbas</p>
             <p className="subtext">
               Software Engineer & Business Graduate from the University of Calgary.
-24 years young. Built across startups to enterprises.
+24 years young. Built across startups and enterprises — from scalable web applications to in-house software systems — and founder of my own software venture.
             </p>
           </div>
           <div className="absolute inset-x-0 pointer-evets-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />

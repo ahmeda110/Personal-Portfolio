@@ -6,5 +6,5 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-  ],
+  ], base: '/Personal-Portfolio/',
 })

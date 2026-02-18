@@ -226,7 +226,7 @@ section {
   }
 
   .hero-3d-layout {
-    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
+    @apply xl:w-[60%] w-full h-full min-h-[30vh] absolute xl:-top-20 md:top-24 top-32 xl:-right-20 right-0;
   }
 
   .navbar {
@@ -370,7 +370,7 @@ section {
   }
 
   .timeline {
-    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black;
+    @apply absolute z-30 h-[110%] -top-10 w-14 md:w-28 bg-black md:block hidden;
   }
 
   .timeline-logo {
@@ -497,6 +497,7 @@ section {
 /* Hero Text slider ends */
 
 .gradient-line {
+  @apply md:block hidden;
   width: 2px;
   background: linear-gradient(
     0deg,
